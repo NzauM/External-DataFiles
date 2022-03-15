@@ -1,0 +1,10 @@
+insert into guestsapp_guest (id, first_name, last_name, email, gender, id_number) values (1, 'Jacky', 'Treadwell', 'jtreadwell0@comcast.net', 'Female', 89421332634);
+insert into guestsapp_guest (id, first_name, last_name, email, gender, id_number) values (2, 'Zara', 'Shalloe', 'zshalloe1@buzzfeed.com', 'Male', 17615519382);
+insert into guestsapp_guest (id, first_name, last_name, email, gender, id_number) values (3, 'Jojo', 'de Guerre', 'jdeguerre2@comsenz.com', 'Female', 18084585188);
+insert into guestsapp_guest (id, first_name, last_name, email, gender, id_number) values (4, 'Nert', 'Misk', 'nmisk3@merriam-webster.com', 'Male', 45208586487);
+insert into guestsapp_guest (id, first_name, last_name, email, gender, id_number) values (5, 'Mahmoud', 'Cheake', 'mcheake4@reverbnation.com', 'Female', 75439534848);
+insert into guestsapp_guest (id, first_name, last_name, email, gender, id_number) values (6, 'Siouxie', 'Nice', 'snice5@wordpress.org', 'Female', 72823784292);
+insert into guestsapp_guest (id, first_name, last_name, email, gender, id_number) values (7, 'Jolie', 'Cheng', 'jcheng6@1und1.de', 'Female', 79838127753);
+insert into guestsapp_guest (id, first_name, last_name, email, gender, id_number) values (8, 'Job', 'MacKimmie', 'jmackimmie7@paginegialle.it', 'Female', 59286219430);
+insert into guestsapp_guest (id, first_name, last_name, email, gender, id_number) values (9, 'Cedric', 'Ginnaly', 'cginnaly8@nhs.uk', 'Male', 7956101958);
+insert into guestsapp_guest (id, first_name, last_name, email, gender, id_number) values (10, 'Callida', 'Schops', 'cschops9@ox.ac.uk', 'Female', 12009474711);

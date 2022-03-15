@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="jumbotron alert alert-primary text-center">
+    <h1><u> Guest Details</u></h1>
+    <h1>Details for {{modelguest.first_name}} {{modelguest.last_name}}</h1>
+  </div>
+  <div style="justify-content: center; height: 70vh;" class="row">
+    <div style="height: 60vh;" class="card container row">
+      <div class="col-md-6">
+        <img class="img-fluid"
+          src="https://png.pngtree.com/png-vector/20190626/ourlarge/pngtree-personalpersonalizationprofileuser-blue-icon-on-abstract-c-png-image_1494457.jpg"
+          alt="">
+
+      </div>
+      <div class="col-md-6">
+        <table class="table ">
+          <thead class="thead-dark">
+            <tr>
+              <h1 class="text-center">User Details</h1>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>id</td>
+              <td>{{modelguest.id}}</td>
+            </tr>
+            <tr>
+              <td>First Name</td>
+              <td>{{modelguest.first_name}}</td>
+            </tr>
+            <tr>
+              <td>Last Name</td>
+              <td>{{modelguest.last_name}}</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td><a href="mailto:{{modelguest.email}}">{{modelguest.email}}</a></td>
+            </tr>
+            <tr>
+              <td>ID Number</td>
+              <td class="badge text-lg btn-outline-primary ">
+                <h4>{{modelguest.id_number}}</h4>
+              </td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              {% if modelguest.gender == "Female" %}
+              <td><label class="badge badge-danger">{{modelguest.gender}}</label></td>
+              {% else %}
+              <td><label class="badge badge-primary">{{modelguest.gender}}</label></td>
+              {% endif %}
+            </tr>
+          </tbody>
+        </table>
+        <div class="row">
+          <div class="col-md-4"> <h4 class="text-center">
+            <a href="{%url 'updateguest' modelguest.id%}"class="btn badge badge-outline-success btn-outline-success">Update</a>
+          </h4></div>
+          <div class="col-md-4"> <h4 class="text-center">
+            <a href="{%url 'deleteguest' modelguest.id%}"class="btn badge badge-outline-danger btn-outline-danger">Delete</a>
+          </h4></div>
+          <div class="col-md-4"> <h4 class="text-center">
+            <a href="{% url 'listusers' %}"class="btn badge badge-outline-primary btn-outline-primary">Back</a>
+          </h4></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+ 
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
