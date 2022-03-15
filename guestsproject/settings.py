@@ -39,7 +39,6 @@ ALLOWED_HOSTS = ['0.0.0.0','localhost','127.0.0.1','guests-app.herokuapp.com']
 
 INSTALLED_APPS = [
     'guestsapp',
-    'whitenoise.runserver_nostatic'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
