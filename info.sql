@@ -1,4 +1,4 @@
-insert into
+                                                                                                                                                                                                                        insert into
     news_users (
         id,
         first_name,
